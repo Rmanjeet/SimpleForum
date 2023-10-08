@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Simple Forum</title>
+  </head>
+  <body>
+    <header>
+      <h1>Simple Forum</h1>
+    </header>
+
+    <main>
+      <section id="post-form">
+        <h2>Create a New Post</h2>
+        <textarea
+          id="post-text"
+          placeholder="Write your post here..."
+        ></textarea>
+        <button id="submit-post">Submit</button>
+      </section>
+      <section id="posts">
+        <!-- Posts will be displayed here -->
+      </section>
+      <section id="post-page" style="display: none">
+        <h2>Post Details</h2>
+        <div id="post-details">
+          <!-- Post details will be displayed here -->
+        </div>
+        <h2>Comments</h2>
+        <div id="comments">
+          <!-- Comments will be displayed here -->
+        </div>
+        <div class="comment-text">
+          <textarea
+            id="comment-text"
+            placeholder="Write your comment here..."
+          ></textarea>
+          <button id="submit-comment">Submit Comment</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
